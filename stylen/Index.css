@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: mistyrose;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    width: 50%;
+    padding: 10px;
+    height: 600px;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 950px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.button2 {
+    background-color: orangered;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+label {
+    background-color: orangered;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

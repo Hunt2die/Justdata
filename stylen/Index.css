@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: mistyrose;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+/* zet de twee columns naast elkaar */
+.column {
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    width: 50%;
+    padding: 10px;
+    height: 600px;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - dit maakt de pagina responsive en zorgt ervoor dat de rechter div boven de linker div komt */
+@media screen and (max-width: 950px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.button2 {
+    background-color: orangered;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+label {
+    background-color: orangered;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
